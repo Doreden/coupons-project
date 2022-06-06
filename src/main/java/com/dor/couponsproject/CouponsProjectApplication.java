@@ -1,7 +1,6 @@
 package com.dor.couponsproject;
 
-import com.dor.couponsproject.entities.CompanyEntity;
-import com.dor.couponsproject.services.CompanyService;
+import com.dor.couponsproject.services.AdminService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,7 +13,7 @@ public class CouponsProjectApplication {
 
         ApplicationContext context = SpringApplication.run(CouponsProjectApplication.class, args);
 
-        CompanyService companyService = context.getBean(CompanyService.class);
+        AdminService adminService = context.getBean(AdminService.class);
 
 //        companyService.createCompany(CompanyEntity.builder()
 //                .name("random")
@@ -36,8 +35,8 @@ public class CouponsProjectApplication {
 
 //        );
 
-        System.out.println(companyService.getOneCompany(1));
-        System.out.println(companyService.getAllCompanies());
+        System.out.println(adminService.getOneCompany(1));
+        System.out.println(adminService.getAllCompanies());
 
     }
 
