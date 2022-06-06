@@ -9,12 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustomerDTO {
 
-    private long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
+public class ResponseDTO {
 
+    private boolean successes;
+    private String message;
 }

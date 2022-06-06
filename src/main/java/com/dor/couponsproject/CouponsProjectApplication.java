@@ -1,6 +1,5 @@
 package com.dor.couponsproject;
 
-import com.dor.couponsproject.entities.CompanyEntity;
 import com.dor.couponsproject.services.CompanyService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,19 +15,19 @@ public class CouponsProjectApplication {
 
         CompanyService companyService = context.getBean(CompanyService.class);
 
-//        companyService.createCompany(CompanyEntity.builder()
+//        companyService.createCompany(Company.builder()
 //                .name("random")
 //                .email("random@gmail.com")
 //                .password("random123")
 //                .build());//
 //
-//        companyService.createCompany(CompanyEntity.builder()
+//        companyService.createCompany(Company.builder()
 //                .name("randomali")
 //                .email("randomali@gmail.com")
 //                .password("random123567")
 //                .build());
 
-//        companyService.updateCompany(CompanyEntity.builder()
+//        companyService.updateCompany(Company.builder()
 //                        .name("random1234")
 //                        .email("random1@gmail.com")
 //                        .password("random123")
