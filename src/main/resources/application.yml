@@ -9,6 +9,6 @@ spring:
     platform: mysql
     url: jdbc:mysql://localhost:3306/coupons_project
     username: root
-    password: ""
+    password: $(SQL_PASSWORD)
     driverClassName: com.mysql.cj.jdbc.Driver
 
