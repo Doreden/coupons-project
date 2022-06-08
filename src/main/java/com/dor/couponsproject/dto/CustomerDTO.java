@@ -1,20 +1,18 @@
+
 package com.dor.couponsproject.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
+@ToString(exclude = "password")
+@NoArgsConstructor
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
 public class CustomerDTO {
 
-    private long id;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-
 }

@@ -1,27 +1,28 @@
 package com.dor.couponsproject.dto;
 
 import com.dor.couponsproject.enums.Category;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.*;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
+@ToString
+@NoArgsConstructor
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
 public class CouponDTO {
 
-    private long id;
-    private Category category;
+    private Long id;
+    private Long companyID;
+    public Category category;
     private String title;
-    private String descreption;
-    private Date  startDate;
-    private Date endDate;
+    private String description;
+    @JsonFormat(pattern = "dd-MM-yyyy")
+    private LocalDate startDate;
+    @JsonFormat(pattern = "dd-MM-yyyy")
+    private LocalDate endDate;
     private int amount;
     private double price;
     private String image;
-
 }

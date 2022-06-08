@@ -9,12 +9,11 @@ import javax.persistence.Enumerated;
 @AllArgsConstructor
 public enum Category {
 
-    FOOD,
     ELECTRICITY,
+    FOOD,
     RESTAURANT,
-    JUNKFOOD,
-    VACATION,
-    BEVERAGE,
-    CLOTHING,
-    SHOES;
+    FASHION,
+    CINEMA,
+    TRAVEL,
+
 }

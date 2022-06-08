@@ -1,4 +1,4 @@
-package com.dor.couponsproject.errors.exceptions;
+package com.dor.couponsproject.errors.Exceptions;
 
 import com.dor.couponsproject.enums.EntityType;
 import com.dor.couponsproject.errors.Constraint;

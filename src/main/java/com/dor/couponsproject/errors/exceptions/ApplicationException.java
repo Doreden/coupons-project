@@ -1,4 +1,4 @@
-package com.dor.couponsproject.errors.exceptions;
+package com.dor.couponsproject.errors.Exceptions;
 
 public class ApplicationException extends Exception {
 

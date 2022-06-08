@@ -35,9 +35,6 @@ public class CouponsProjectApplication {
 
 //        );
 
-        System.out.println(companyService.getOneCompany(1));
-        System.out.println(companyService.getAllCompanies());
-
     }
 
 
